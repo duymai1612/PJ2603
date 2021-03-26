@@ -5,9 +5,9 @@ const getPosts = {
   method: "GET",
   path: routes.posts.value,
   options: {
-    tags: ['api'],
-    description: 'Get all posts',
-    handler: async function (): Promise<object> {
+    tags: ["api"],
+    description: "Get all posts",
+    handler: async function (): Promise<object[]> {
       return postGateway.getPosts()
     },
     auth: {
